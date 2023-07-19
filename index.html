@@ -47,7 +47,7 @@
       </div>
       <!-- Puschase -->
       <div class="d-block">
-        <a onclick="downloadPDF()" class="btn btn-fab btn-sm" title="Baixar CV" data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
+        <a onclick="downloadPDF('cv/CV_Etevaldo_Antunes.pdf')" class="btn btn-fab btn-sm" title="Baixar CV" data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
       </div>
       <!-- Help -->
       <div class="d-block">
@@ -141,7 +141,7 @@
             <li><b>Idade:</b> 30</li>
             <li><b>Gênero:</b> Masculino</li>
           </ul>
-          <button onclick="downloadPDF()" class="btn btn-theme-outline">Baixar CV</button>
+          <button onclick="downloadPDF('assets/download/CV_Etevaldo_Antunes.pdf')" class="btn btn-theme-outline">Baixar CV</button>
         </div>
       </div>
     </div>
@@ -771,8 +771,8 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
 
   <script>
-    function downloadPDF() {
-      const pdfUrl = 'assets/download/CV_Etevaldo_Antunes.pdf'; // Replace with the actual URL of your PDF file
+    function downloadPDF(url) {
+      const pdfUrl = url; // Replace with the actual URL of your PDF file
 
       // Create a hidden anchor element to trigger the download
       const anchor = document.createElement('a');
